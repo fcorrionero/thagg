@@ -1,4 +1,4 @@
-package com.fsc.thagg
+package com.fsc.thagg.entrypoint
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

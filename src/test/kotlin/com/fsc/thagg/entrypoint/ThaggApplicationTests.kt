@@ -1,4 +1,4 @@
-package com.fsc.thagg
+package com.fsc.thagg.entrypoint
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
