@@ -1,3 +1,5 @@
 package com.fsc.thagg.domain
 
-data class Comment(val user: String ,val text: String)
+import java.util.UUID
+
+data class Comment(val id: UUID,val user: String ,val text: String)

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
+import java.util.*
 
 class GetVideoCommentsUnitTests {
 
@@ -32,7 +33,7 @@ class GetVideoCommentsUnitTests {
     fun `should get all comments from a video url`() {
         val getAllCommentsQuery = GetAllCommentsQuery("url")
 
-        val commentList = listOf(Comment("user1","text1"), Comment("user2","text2"))
+        val commentList = listOf(Comment(UUID.randomUUID(),"user1","text1"), Comment(UUID.randomUUID(),"user2","text2"))
         Mockito.`when`(commentAdapterMock.getAllComments(getAllCommentsQuery.url)).thenReturn(commentList)
 
         val getAllCommentsQueryHandler = GetAllCommentsQueryHandler(commentAdapterMock)
